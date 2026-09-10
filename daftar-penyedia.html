@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+ <head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta
+ name="description"
+ content="Formulir prototipe untuk mendaftarkan usaha sebagai penyedia makanan di SisaBaik."
+ >
+ <title>Daftar Penyedia | SisaBaik</title>
+ </head>
+ <body>
+ <a href="#konten-utama">Lewati ke konten utama</a>
+ <header>
+ <p><strong>SisaBaik</strong></p>
+ <nav aria-label="Navigasi utama">
+ <ul>
+ <li><a href="index.html">Beranda</a></li>
+ <li>
+ <a href="daftar-penyedia.html" aria-current="page">
+ Daftar sebagai penyedia
+ </a>
+ </li>
+ <li><a href="tawarkan-makanan.html">Tawarkan makanan</a></li>
+ </ul>
+ </nav>
+ </header>
+ <main id="konten-utama" tabindex="-1">
+ <h1>Daftar sebagai penyedia SisaBaik</h1>
+ <p>
+ Gunakan data fiktif selama praktikum. Formulir ini belum terhubung ke
+server dan basis data.
+ </p>
+ <p id="petunjuk-wajib">Kolom bertanda <strong>*</strong> wajib diisi.</p>
+ <form
+ action="daftar-penyedia.html"
+ method="get"
+ aria-describedby="petunjuk-wajib"
+ >
+ <fieldset>
+ <legend>Informasi usaha</legend>
+ <p>
+ <label for="nama-usaha">Nama usaha *</label><br>
+ <input
+ type="text"
+ id="nama-usaha"
+ name="nama_usaha"
+ autocomplete="organization"
+ minlength="3"
+ maxlength="100"
+ required
+ >
+ </p>
+ <p>
+ <label for="jenis-usaha">Jenis usaha *</label><br>
+ <select id="jenis-usaha" name="jenis_usaha" required>
+ <option value="">Pilih jenis usaha</option>
+ <option value="restoran">Restoran</option>
+ <option value="toko-roti">Toko roti</option>
+ <option value="katering">Katering</option>
+ <option value="ritel">Toko ritel</option>
